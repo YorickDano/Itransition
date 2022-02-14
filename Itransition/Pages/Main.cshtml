@@ -1,0 +1,65 @@
+﻿@page "{Id}"
+@model ItransitionTask3.Pages.MainModel
+@using Microsoft.AspNetCore.Components.Web
+@{
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/my.css" />
+</head>
+<body>
+    <h1 class="title">MAIN</h1>
+     <form method="post">
+    <div class="big_box1">
+       
+   
+        <h5 class="darkRedTextSile">Tools: 
+
+            <input class="im" type=image src="~/img/lock.png" asp-page-handler="LockUsers" />
+
+            <input class="im" type=image src="~/img/unlock.png" asp-page-handler="UnLockUsers" />
+           
+            <input class="im" type=image src="~/img/ban.png" asp-page-handler="BanUsers" />
+            
+        </h5>
+    
+    </div>
+     
+    <form method="post" enctype="multipart/form-data">
+         <input class="im" type=image src="~/img/sellectAll.png" asp-page-handler="SellectAll"  />
+        <table name="Users">
+            <tr name="Info">
+                <td></td>
+                <td>Id</td>
+                <td>User Name</td>
+                <td>User Email</td>
+                <td>Create Date</td>
+                <td>Last Updated Date</td>
+                <td>Status</td>
+            </tr>
+            @{
+
+                for (int i = 0; i < ItransitionTask3.Pages.Helders.Helder.GetHelderUsers().Count; ++i)
+                {
+                    <tr name="user">
+                        <td><input name="CheckBoxs" asp-for=@ItransitionTask3.Pages.Helders.Helder.GetHelderUsers()[i].CheckBox type="checkbox" value="@ItransitionTask3.Pages.Helders.Helder.GetHelderUsers()[i].Id" /></td>
+                        <td>@ItransitionTask3.Pages.Helders.Helder.GetHelderUsers()[i].Id</td>
+                        <td>@ItransitionTask3.Pages.Helders.Helder.GetHelderUsers()[i].Name</td>
+                        <td>@ItransitionTask3.Pages.Helders.Helder.GetHelderUsers()[i].Email</td>
+                        <td>@ItransitionTask3.Pages.Helders.Helder.GetHelderUsers()[i].CreatedDate</td>
+                        <td>@ItransitionTask3.Pages.Helders.Helder.GetHelderUsers()[i].LastUpdatedDate</td>
+                        <td>@ItransitionTask3.Pages.Helders.Helder.GetHelderUsers()[i].Status</td>
+                    </tr>
+                }
+            }
+        </table>
+
+    </form>
+   
+    </form>
+</body>
+</html>

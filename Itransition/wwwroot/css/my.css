@@ -1,0 +1,128 @@
+﻿html {
+   
+}
+nav {
+   
+   
+   border:none;
+}
+div{
+    border:none;
+}
+footer{
+    
+}
+
+.divRight{
+    float:right;
+}
+.divLeft{
+    float:left;
+}
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 110%;
+    color: rgb(200,0,0);
+    text-align: center;
+}
+.atCenter{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+}
+.darkRedTextSile {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 110%;
+    color: rgb(200,0,0);
+    text-align: left;
+    margin-left: auto;
+}
+.big_box1 {
+    display: block;
+    width: auto;
+    border: 10px solid rgba(0,0,0,0);
+}
+.big_box2 {
+    display: block;
+   
+   height:30px;
+   top:40px;
+}
+
+.box {
+    float: left;
+    border: 3px solid rgba(0,0,0,0);
+    border-bottom: 50px solid rgba(0,0,0,0);
+    padding-top: 5px;
+    width: 255px;
+    height: 255px;
+    
+    margin-bottom: 25px;
+}
+.colum {
+    column-width: 50px;
+}
+
+.back {
+    background: url(../default/bgDeath.jpg);
+}
+
+.height-25{
+    height:25px;
+}
+.height-50 {
+    height: 50px;
+}
+.height-100{
+    height:100px;
+}
+.align-bottom-center{
+    bottom:0;
+    text-align:center;
+   
+}
+.max-width {
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    word-wrap: break-word;
+   
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.text-description{
+    height: auto;
+    width: auto;
+}
+
+.im {
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+
+.im-item {
+    display: block;
+    width: 400px;
+    height: 400px;
+    margin: 10px,5px;
+    border-radius: 15%;
+    border: 0;
+}
+span {
+    float: left;
+}
+img {
+    margin:0,20px;
+}
+table {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
